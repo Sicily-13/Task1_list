@@ -1,0 +1,110 @@
+body {
+ background-image: url("img/black_bg3.jpg");
+ text-align: center;
+ height: 100%;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.text {
+ border: none;
+ background: none;
+ outline: none;
+ border-bottom: solid 2px #000;
+}
+
+.paper {
+ background-image: url("img/bg.jpg");
+ width: 564px;
+ height: auto;
+ border: 4px solid #fff;
+ position: relative;
+ top: 100px;
+ left: 30%;
+}
+li{
+ margin-top: 10px;
+}
+
+button{
+ position: relative;
+ border: none;
+ color:#000;
+ background: none;
+ text-transform: uppercase;
+ display: inline-block;
+ letter-spacing: 3px;
+ font-size: 16px;
+ padding: 5px 10px;
+ overflow: hidden;
+ transition: 0.2s;
+ margin: 3px;
+}
+
+.btn_line{
+ position: absolute;
+ display: block;
+}
+
+.btn_line-top{
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 2px;
+ background:linear-gradient(90deg,transparent,#000) ;
+}
+
+.btn_add:hover .btn_line-top{
+ left: 100%;
+ transition: 1s;
+ transition-delay: 0.25s;
+}
+
+.btn_line-bottom{
+ bottom: 0;
+ right: -100%;
+ width: 100%;
+ height: 2px;
+ background:linear-gradient(270deg,transparent,#000) ;
+}
+
+button:hover .btn_line-bottom{
+ right: 100%;
+ transition: 1s;
+ transition-delay: 0.25s;
+}
+
+.btn_line-right{
+ right: 0;
+ top: -100%;
+ width: 2px;
+ height: 100%;
+ background:linear-gradient(180deg,transparent,#000) ;
+}
+
+button:hover .btn_line-right{
+ top: 100%;
+ transition: 1s;
+ transition-delay: 0s;
+}
+
+.btn_line-left{
+ left: 0;
+ bottom: -100%;
+ width: 2px;
+ height: 100%;
+ background:linear-gradient(0deg,transparent,#000) ;
+}
+
+button:hover .btn_line-left{
+ bottom: 100%;
+ transition: 1s;
+ transition-delay: 0s;
+}
+
+button:hover{
+ color: #fff;
+ background-color: #000;
+ box-shadow: 0 0 10px #000, 0 0 40px #000, 0 0 80px #000;
+ transition-delay: 1s;
+}
