@@ -20,7 +20,7 @@ body {
  border: 4px solid #fff;
  position: relative;
  top: 100px;
- left: 30%;
+ margin: 0 auto;
 }
 li{
  margin-top: 10px;
